@@ -1,6 +1,5 @@
-import { actionTypes } from "redux-form";
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from "./testConstats";
-import { createReducter } from "../../app/common/uitl/reducerUtils";
+import { createReducer } from "../../app/common/util/reducerUtils";
 
 const initialState = {
   data: 42
@@ -15,7 +14,7 @@ const decrementCounter = (state) => {
 }
 
 
-export default createReducter(initialState, {
+export default createReducer(initialState, {
     [INCREMENT_COUNTER]: incrementCounter,
     [DECREMENT_COUNTER]: decrementCounter
 });
